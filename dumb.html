@@ -1,0 +1,17 @@
+<head>
+  <title>dumb</title>
+</head>
+
+<body>
+  <h1>Welcome to DumbCollections!</h1>
+   {{> dumbTemplate}}
+</body>
+
+<template name="dumbTemplate">
+  <ul>
+  {{#each items}}
+    <li>{{name}}</li>
+  {{/each}}
+  </ul>
+  <button>sync!</button>
+</template>
