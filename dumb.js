@@ -16,7 +16,7 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
-    collection = Dumb._collection  
+    collection = Dumb//._collection
     if(!collection.find().count()) {
       collection.insert({name: 'foo'}) //_id: 'foo',  _id: collection._makeNewID(), 
       collection.insert({name: 'bar'})
